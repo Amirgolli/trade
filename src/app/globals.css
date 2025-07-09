@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+@plugin "daisyui" {
+  themes: false;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,7 +30,8 @@ body {
 }
 @font-face {
   font-family: "Jakarta";
-  src: url("/public/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900; 
+  src: url("/public/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
   font-style: normal;
 }

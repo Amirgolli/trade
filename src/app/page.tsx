@@ -1,9 +1,9 @@
-// import Image from "next/image";
-
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <h1>this is main page </h1>
-    </>
+    <div className="not-dark:bg-[#F7F7F7] h-full ">
+      test text
+    </div>
   );
 }
+
+export default Home;

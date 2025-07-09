@@ -13,6 +13,8 @@ const SearchSvg = () => {
         stroke-width="1.4"
         stroke-linecap="round"
         stroke-linejoin="round"
+        className="not-dark:stroke-black"
+
       />
     </svg>
   );
