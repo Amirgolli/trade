@@ -15,7 +15,7 @@ const HeaderComponent: React.FC<HeaderProps> = ({ isOpen, toggleSidebar }) => {
   return (
     <header
       className={`dark:bg-[#1A1A1B] pt-4 pb-4 pl-5 pr-5 flex justify-between items-center transition-all duration-300 ease-in-out ${
-        isOpen ? "not-dark:md:ml-65" : "md:ml-0"
+        isOpen ? "md:ml-65" : "md:ml-0"
       }`}
     >
       <div className="hidden md:block">
@@ -26,7 +26,7 @@ const HeaderComponent: React.FC<HeaderProps> = ({ isOpen, toggleSidebar }) => {
           <SidebarSvg
             style={{
               transform: isOpen ? "rotate(0deg)" : "rotate(180deg)",
-              transition: "transform 0.3s ease",
+              transition: "transform 0.3s ease m-10",
             }}
           />
         </label>
@@ -35,7 +35,7 @@ const HeaderComponent: React.FC<HeaderProps> = ({ isOpen, toggleSidebar }) => {
         <input
           type="search"
           placeholder="Search product"
-          className="outline-none placeholder:text-gray-400 dark:bg-[#1A1A1B] w-full p-2"
+          className="outline-none  w-full p-2"
         />
         <SearchSvg />
       </div>
