@@ -11,7 +11,7 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body>
         <HeaderComponent />
-        <main>{children}</main>
+        <main>{children} </main>
       </body>
     </html>
   );
