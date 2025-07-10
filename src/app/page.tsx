@@ -151,7 +151,7 @@ const Home = () => {
 
       <div className="flex flex-col  md:flex-row">
         {/* map */}
-        <div className="w-98 md:w-120  mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col gap-5 mr-8">
+        <div className="w-98 md:w-120  mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col gap-10 mr-8">
           <div className="flex justify-between">
             <h3 className="font-semibold">Customer Growth 3 Province</h3>
             <div className="flex gap-1">
@@ -182,7 +182,7 @@ const Home = () => {
           />
         </div>
         {/* shoes data */}
-        <div className=" w-98 md:w-250 mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col ">
+        <div className=" w-98 md:w-250 md:h-139 mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col ">
           <div className="flex justify-between mb-15">
             <h3 className="font-semibold">Product Popular</h3>
             <div className="flex gap-1">
@@ -204,10 +204,10 @@ const Home = () => {
             </div>
           ))}
 
-          <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 hidden md:table">
-            <table className="table ">
+          <div className="overflow-x-auto rounded-box   hidden md:table">
+            <table className="table  ">
               {/* head */}
-              <thead className="border bg-amber-200">
+              <thead className="border border-[#252525] bg-[#101011]">
                 <tr>
                   <th>Product </th>
                   <th>Price</th>
@@ -215,50 +215,38 @@ const Home = () => {
                   <th>Status</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="border border-[#252525]">
                 {/* row 1 */}
-                <tr>
-                  <th>
-                    <div className="collapse-title font-semibold flex gap-4.5">
-                      <Image
-                        height={40}
-                        width={40}
-                        src="/images/mainPage/shoe.png"
-                        alt="shoes"
-                        className="rounded-md"
-                      />
-                      <div className="flex flex-col gap-.5">
-                        <span className="text-[#1A71F6] font-light">
-                          021231
-                        </span>
-                        <h5 className="text-[14px]">
-                          Kanky Kitadakate (Green)
-                        </h5>
+                {ShoesInfo.map((item, index) => (
+                  <tr key={index}>
+                    <th>
+                      <div className="collapse-title font-semibold flex gap-4.5">
+                        <Image
+                          height={40}
+                          width={40}
+                          src={item.img}
+                          alt="shoes"
+                          className="rounded-md"
+                        />
+                        <div className="flex flex-col gap-.5">
+                          <span className="text-[#1A71F6] font-light">
+                            {item.code}
+                          </span>
+                          <h5 className="text-[14px]">
+                            {item.name}
+                          </h5>
+                        </div>
                       </div>
-                    </div>
-                  </th>
-                  <td>$20.00</td>
-                  <td>3000</td>
-                  <td>
-                    <span className="font-bold text-[#28B652] p-1 bg-[#F3FFC8] rounded-2xl">
-                      Success
-                    </span>
-                  </td>
-                </tr>
-                {/* row 2 */}
-                <tr>
-                  <th>2</th>
-                  <td>Hart Hagerty</td>
-                  <td>Desktop Support Technician</td>
-                  <td>Purple</td>
-                </tr>
-                {/* row 3 */}
-                <tr>
-                  <th>3</th>
-                  <td>Brice Swyre</td>
-                  <td>Tax Accountant</td>
-                  <td>Red</td>
-                </tr>
+                    </th>
+                    <td>{item.price}</td>
+                    <td>{item.sales}</td>
+                    <td>
+                      <span className="font-bold text-[#28B652] p-1 bg-[#F3FFC8] rounded-2xl">
+                        {item.status}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
