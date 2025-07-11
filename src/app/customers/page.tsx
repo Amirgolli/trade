@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import SearchSvg from "../../../public/images/header/svg/search";
 import PathSvg from "../../../public/images/mainSvgs/path";

@@ -155,10 +155,12 @@ const ProductPage = () => {
                   <DownloadSvg />
                 </div>
               </div>
-              <div className="h-10 w-33 bg-[#1A71F6] p-3 flex justify-between items-center rounded-lg cursor-pointer">
-                <span className="text-[13px] font-semibold">New Product</span>
-                <PlusSvg />
-              </div>
+              <Link href={"/addproduct"}>
+                <div className="h-10 w-33 bg-[#1A71F6] p-3 flex justify-between items-center rounded-lg cursor-pointer">
+                  <span className="text-[13px] font-semibold">New Product</span>
+                  <PlusSvg />
+                </div>
+              </Link>
             </div>
           </div>
         </div>

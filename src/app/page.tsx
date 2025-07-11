@@ -182,7 +182,7 @@ const Home = () => {
           />
         </div>
         {/* shoes data */}
-        <div className=" w-98 md:w-250 md:h-139 mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col ">
+        <div className=" w-98 md:w-250  mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col ">
           <div className="flex justify-between mb-15">
             <h3 className="font-semibold">Product Popular</h3>
             <div className="flex gap-1">
