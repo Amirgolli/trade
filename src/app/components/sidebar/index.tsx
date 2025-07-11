@@ -70,7 +70,9 @@ const SidebarComponent: React.FC<SidebarProps> = ({ isOpen }) => {
               </div>
             </div>
             <TextSidebar icon={<PaperSvg />} text="Transaction (441)" />
-            <TextSidebar icon={<PeopleSvg />} text="Customers" />
+            <Link href={"/customers"}>
+              <TextSidebar icon={<PeopleSvg />} text="Customers" />
+            </Link>
             <TextSidebar icon={<ChartSvg />} text="Sales Report" />
           </div>
           <div className="mt-8">

@@ -5,115 +5,97 @@ import PathSvg from "../../../public/images/mainSvgs/path";
 import DownloadSvg from "../../../public/images/product/svg/download";
 import FilterSvg from "../../../public/images/product/svg/filter";
 import PlusSvg from "../../../public/images/product/svg/plus";
-import ShoesData2 from "../components/shoesmb";
 import EyeSvg from "../../../public/images/product/svg/eye";
 import EditSvg from "../../../public/images/product/svg/edit";
 import BinSvg from "../../../public/images/product/svg/bin";
+import PersonalData from "./components/personal/index";
 
-const ProductPage = () => {
-  const ShoesInfo = [
+const Customers = () => {
+  const personalInfo = [
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
     {
       img: "/images/mainPage/shoe.png",
-      size: 40,
-      date: "04/17/23  at 8:25 PM",
-      qty: "3000",
+      order: "30 Order",
+      address: "2972 Westheimer Rd. Santa Ana, Illinois 85486 ",
+      purchase: "$21.78",
       name: "Kanky Kitadakate (Green)",
-      price: 32032,
-      sales: 3000,
-      status: "Available",
-      code: 2000,
+      contact: "georgia@example.com",
+      code: "ID 12451",
     },
   ];
   return (
     <>
       {/* path */}
       <div className="flex flex-col gap-2">
-        <h1 className="text-[24px]">Product</h1>
+        <h1 className="text-[24px]">Customers</h1>
         <div className="flex gap-1 items-center">
           <Link href={"/"}>
             <span className="text-[#B0B0B0]">Dashboard</span>
           </Link>
           <PathSvg />
-          <span className="text-[#B0B0B0]">Product</span>
-          <PathSvg />
-          <span className="text-[#1A71F6]">Sneakers</span>
+          <span className="text-[#1A71F6]">Customers</span>
         </div>
       </div>
       <div className="mt-5 dark:bg-[#1A1A1B] p-4 border flex flex-col gap-6 border-[#3D3D3D] rounded-2xl">
@@ -168,29 +150,22 @@ const ProductPage = () => {
             {/* head */}
             <thead className="border border-[#252525] not-dark:bg-[#F6F6F6] not-dark:border-[#E7E7E7] bg-[#101011]">
               <tr>
-                <th>Product </th>
-                <th>Price</th>
-                <th>Size</th>
-                <th>QTY</th>
-                <th>Date</th>
-                <th>Status</th>
+                <th>Name Customer </th>
+                <th>Contact</th>
+                <th>Purchases</th>
+                <th>order QTY</th>
+                <th>Address</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody className="border border-[#252525]">
               {/* row 1 */}
-              {ShoesInfo.map((item, index) => (
+              {personalInfo.map((item, index) => (
                 <tr key={index}>
                   <th>
                     <div className="collapse-title font-semibold flex gap-4.5">
                       <input type="checkbox" />
-                      <Image
-                        height={40}
-                        width={40}
-                        src={item.img}
-                        alt="shoes"
-                        className="rounded-md"
-                      />
+
                       <div className="flex flex-col gap-.5">
                         <span className="text-[#1A71F6] font-light">
                           {item.code}
@@ -199,15 +174,10 @@ const ProductPage = () => {
                       </div>
                     </div>
                   </th>
-                  <td>{item.price}</td>
-                  <td>{item.size}</td>
-                  <td>{item.qty}</td>
-                  <td>{item.date}</td>
-                  <td>
-                    <span className="font-bold text-[#28B652] p-1 bg-[#F3FFC8] rounded-2xl">
-                      {item.status}
-                    </span>
-                  </td>
+                  <td>{item.contact}</td>
+                  <td>{item.purchase}</td>
+                  <td>{item.order}</td>
+                  <td>{item.address}</td>
                   <td>
                     <div className="flex gap-4">
                       <EyeSvg />
@@ -226,17 +196,15 @@ const ProductPage = () => {
             <input type="checkbox" />
             <span> Product</span>
           </div>
-          {ShoesInfo.map((item, index) => (
+          {personalInfo.map((item, index) => (
             <div key={index} className="join join-vertical ">
-              <ShoesData2
+              <PersonalData
                 code={item.code}
-                img={item.img}
-                date={item.date}
+                address={item.address}
                 name={item.name}
-                price={item.price}
-                qty={item.qty}
-                status={item.status}
-                size={item.size}
+                contact={item.contact}
+                purchases={item.purchase}
+                order={item.order}
               />
             </div>
           ))}
@@ -265,4 +233,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default Customers;

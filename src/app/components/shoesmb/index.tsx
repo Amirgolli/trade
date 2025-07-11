@@ -1,7 +1,7 @@
 import Image from "next/image";
-import EyeSvg from "../../../../../public/images/product/svg/eye";
-import EditSvg from "../../../../../public/images/product/svg/edit";
-import BinSvg from "../../../../../public/images/product/svg/bin";
+import EyeSvg from "../../../../public/images/product/svg/eye";
+import EditSvg from "../../../../public/images/product/svg/edit";
+import BinSvg from "../../../../public/images/product/svg/bin";
 
 interface Shoes {
   img: string;
