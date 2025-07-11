@@ -190,19 +190,23 @@ const Home = () => {
               <LinkToSvg />
             </div>
           </div>
-
-          {ShoesInfo.map((item, index) => (
-            <div key={index} className="join join-vertical bg-base-100">
-              <ShoesData
-                img={item.img}
-                code={item.code}
-                name={item.name}
-                price={item.price}
-                sales={item.sales}
-                status={item.status}
-              />
+          <div className="">
+            <div className="bg-[#101011] border border-[#3D3D3D] rounded-t-2xl h-10 p-2 pl-4 flex gap-5">
+              <span> Product</span>
             </div>
-          ))}
+            {ShoesInfo.map((item, index) => (
+              <div key={index} className="join join-vertical ">
+                <ShoesData
+                  img={item.img}
+                  code={item.code}
+                  name={item.name}
+                  price={item.price}
+                  sales={item.sales}
+                  status={item.status}
+                />
+              </div>
+            ))}
+          </div>
 
           <div className="overflow-x-auto rounded-box   hidden md:table">
             <table className="table  ">
@@ -232,9 +236,7 @@ const Home = () => {
                           <span className="text-[#1A71F6] font-light">
                             {item.code}
                           </span>
-                          <h5 className="text-[14px]">
-                            {item.name}
-                          </h5>
+                          <h5 className="text-[14px]">{item.name}</h5>
                         </div>
                       </div>
                     </th>

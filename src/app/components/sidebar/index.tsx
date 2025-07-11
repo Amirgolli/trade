@@ -9,6 +9,7 @@ import ProductSvg from "../../../../public/images/sidebar/svg/product";
 import SettingSvg from "../../../../public/images/sidebar/svg/setting";
 import HelpSvg from "../../../../public/images/sidebar/svg/help";
 import DarkMode from "../../../../public/images/sidebar/svg/dark";
+import Link from "next/link";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -49,7 +50,9 @@ const SidebarComponent: React.FC<SidebarProps> = ({ isOpen }) => {
           </div>
           <div className="mt-8">
             <h3 className="text-[#737373] text-[17px] ml-2">General</h3>
-            <TextSidebar icon={<HomeSvg />} text="Dashboard" />
+            <Link href={"/"}>
+              <TextSidebar icon={<HomeSvg />} text="Dashboard" />
+            </Link>
             <div tabIndex={0} className="collapse collapse-arrow ">
               <div className="collapse-title text-[#B0B0B0] font-semibold flex gap-2">
                 <ProductSvg />
@@ -57,7 +60,9 @@ const SidebarComponent: React.FC<SidebarProps> = ({ isOpen }) => {
               </div>
               <div className="collapse-content  text-sm">
                 <ul className="ml-5 flex flex-col gap-3 cursor-pointer">
-                  <li>Sneakers</li>
+                  <Link href={"/product"}>
+                    <li>Sneakers</li>
+                  </Link>
                   <li>Jacket</li>
                   <li>T-Shirt</li>
                   <li>Bag</li>

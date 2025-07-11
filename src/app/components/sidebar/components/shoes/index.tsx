@@ -11,7 +11,7 @@ interface Shoes {
 
 const ShoesData = ({ img, code, name, price, sales, status }: Shoes) => {
   return (
-    <div className="md:hidden  collapse collapse-arrow join-item border border-[#3D3D3D]">
+    <div className="md:hidden  collapse collapse-arrow join-item border border-[#3D3D3D] w-89">
       <input type="radio" name="my-accordion-4" defaultChecked />
       <div className="collapse-title font-semibold flex gap-4.5">
         <Image
