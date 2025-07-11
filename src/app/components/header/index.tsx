@@ -14,7 +14,7 @@ interface HeaderProps {
 const HeaderComponent: React.FC<HeaderProps> = ({ isOpen, toggleSidebar }) => {
   return (
     <header
-      className={`dark:bg-[#1A1A1B] pt-4 pb-4 pl-5 pr-5 flex justify-between items-center transition-all duration-300 ease-in-out ${
+      className={`dark:bg-[#1A1A1B]  pt-4 pb-4 pl-5 pr-5 flex justify-between items-center transition-all duration-300 ease-in-out ${
         isOpen ? "md:ml-65" : "md:ml-0"
       }`}
     >

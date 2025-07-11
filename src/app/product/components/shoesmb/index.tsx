@@ -64,7 +64,7 @@ const ShoesData2 = ({
             {status}
           </span>
         </div>
-        <div className="flex gap-7.5 mb-2">
+        <div className="flex gap-7.5 mb-2 mt-2">
           <span className="text-[#B0B0B0] text-[12px]">Action</span>
           <div className="flex gap-4">
             <EyeSvg />
