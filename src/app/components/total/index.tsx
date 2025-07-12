@@ -9,7 +9,7 @@ interface TotalDataProps {
 
 const TotalData = ({ price, text, benefit }: TotalDataProps) => {
   return (
-    <div className="w-48 md:w-90  h-38 bg-[#1A1A1B] rounded-2xl p-3 flex flex-col justify-between border border-[#3D3D3D] mb-4">
+    <div className="w-48 md:w-90  h-38 not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B] rounded-2xl p-3 flex flex-col justify-between border border-[#3D3D3D] mb-4">
       <div className="flex justify-between">
         <span>{text}</span>
         <LinkToSvg />

@@ -65,7 +65,7 @@ const Home = () => {
 
       <div className="flex flex-col md:flex-row gap-5.5 ">
         <div className="">
-          <div className="w-98 md:w-185 h-38  mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col justify-between">
+          <div className="w-98 md:w-185 h-38  mt-5 not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col justify-between">
             <h3 className="font-semibold">Sales Target</h3>
             <div className="flex justify-between">
               <div className="">
@@ -88,7 +88,7 @@ const Home = () => {
           </div>
 
           {/* chart */}
-          <div className="w-98 md:w-185 h-90 md:h-120 mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col justify-between">
+          <div className="w-98 md:w-185 h-90 md:h-120 mt-5 not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col justify-between">
             <div className="flex justify-between">
               <h3 className="font-semibold">Sales Target</h3>
               <div className="flex gap-1">
@@ -151,7 +151,7 @@ const Home = () => {
 
       <div className="flex flex-col  md:flex-row">
         {/* map */}
-        <div className="w-98 md:w-120  mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col gap-10 mr-8">
+        <div className="w-98 md:w-120  mt-5 not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col gap-10 mr-8">
           <div className="flex justify-between">
             <h3 className="font-semibold">Customer Growth 3 Province</h3>
             <div className="flex gap-1">
@@ -182,7 +182,7 @@ const Home = () => {
           />
         </div>
         {/* shoes data */}
-        <div className=" w-98 md:w-250  mt-5 bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col ">
+        <div className=" w-98 md:w-250  mt-5 not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B] border border-[#3D3D3D] rounded-2xl p-4 flex flex-col ">
           <div className="flex justify-between mb-15">
             <h3 className="font-semibold">Product Popular</h3>
             <div className="flex gap-1">
@@ -191,7 +191,7 @@ const Home = () => {
             </div>
           </div>
           <div className="">
-            <div className="bg-[#101011] border border-[#3D3D3D] rounded-t-2xl h-10 p-2 pl-4 flex gap-5">
+            <div className="not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B] border border-[#3D3D3D] rounded-t-2xl h-10 p-2 pl-4 flex gap-5">
               <span> Product</span>
             </div>
             {ShoesInfo.map((item, index) => (
@@ -211,7 +211,7 @@ const Home = () => {
           <div className="overflow-x-auto rounded-box   hidden md:table">
             <table className="table  ">
               {/* head */}
-              <thead className="border border-[#252525] bg-[#101011]">
+              <thead className="border border-[#252525] not-dark:border-[#E7E7E7] bg-white dark:bg-[#1A1A1B]">
                 <tr>
                   <th>Product </th>
                   <th>Price</th>
@@ -219,7 +219,7 @@ const Home = () => {
                   <th>Status</th>
                 </tr>
               </thead>
-              <tbody className="border border-[#252525]">
+              <tbody className="border border-[#252525] not-dark:border-[#E7E7E7]">
                 {/* row 1 */}
                 {ShoesInfo.map((item, index) => (
                   <tr key={index}>
